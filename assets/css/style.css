@@ -1,0 +1,516 @@
+.img-header {
+    height: 200px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #970CC1;
+}
+
+#moi {
+    height: 200px;
+}
+
+#centered {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #be9fe1;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #333333 solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: #e1ccec;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+    padding: 10px 20px;
+    background-color: #be9fe1;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: #e1d9ec;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #333333;
+}
+
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+    html, body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+    p {
+        padding: 10px !important;
+    }
+}
+
+#SkillBox {
+    font-size: 20px;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+#SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 35%;
+    padding: 10px;
+}
+
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+
+#Skill-HTML {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #E49EFA;
+}
+
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 100%
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 100%
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 100%
+    }
+}
+
+#Skill-CSS {
+    animation: Animate-CSS 4s;
+    -webkit-animation: Animate-CSS 4s;
+    -moz-animation: Animate-CSS 4s;
+    -o-animation: Animate-CSS 4s;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #DF8CF8;
+}
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
+}
+
+#Skill-bootstrap {
+    animation: Animate-jQuery 4s;
+    -webkit-animation: Animate-jQuery 4s;
+    -moz-animation: Animate-jQuery 4s;
+    -o-animation: Animate-jQuery 4s;
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    background-color: #870BAD;
+}
+
+@keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-webkit-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-moz-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-o-keyframes Animate-jQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #3C054D;
+}
+
+@keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 65%
+    }
+}
+
+@-webkit-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 65%
+    }
+}
+
+@-moz-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 65%
+    }
+}
+
+@-o-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 65%
+    }
+}
+
+#Skill-php {
+    animation: Animate-XML 4s;
+    -webkit-animation: Animate-XML 4s;
+    -moz-animation: Animate-XML 4s;
+    -o-animation: Animate-XML 4s;
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    background-color: #CE52F4;
+}
+
+@keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-webkit-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-moz-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+@-o-keyframes Animate-XML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
+}
+
+#Skill-sql {
+    animation: Animate-C 4s;
+    -webkit-animation: Animate-C 4s;
+    -moz-animation: Animate-C 4s;
+    -o-animation: Animate-C 4s;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    background-color: #970cc1;
+}
+
+@keyframes Animate-C {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
+}
+
+@-webkit-keyframes Animate-C {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
+}
+
+@-moz-keyframes Animate-C {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
+}
+
+@-o-keyframes Animate-C {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+}
+
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+}
+
+.dropbtn {
+    background-color: #970cc1;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    z-index: 99;
+    background-color: #DF8CF8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}

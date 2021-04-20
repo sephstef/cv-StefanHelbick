@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CV numérique</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="assets/img/dev.png" alt="image code" class="img-fluid img-header">
+            <h1 id="centered" class="text-white display-1">Stefan Helbick</h1>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-sm d-none d-sm-block navbar-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutme">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#experiences">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#!" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="dropdown d-block d-sm-none">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#aboutme">À Propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#phoneModal">Contact</a>
+        </div>
+    </div>
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Téléphone: numéro</p>
+                    <p>Mail: jean-pierre@caillou.fr</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="phoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Téléphone: numéro</p>
+                    <p>Mail: jean-pierre@caillou.fr</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/swag.jpg" class="card-img-top" alt="my photo">
+                        <div class="card-body">
+                            <p class="card-text">Stefan Helbick</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 offset-2">
+                    <h2 class="h1 text-center">À Propos</h2>
+                    <p>Powder powder apple pie jujubes. Wafer gummies topping marshmallow candy canes
+                        marzipan. Cheesecake chocolate bar caramels. Donut pastry cookie jujubes marshmallow tiramisu
+                        cheesecake. Jelly beans marzipan topping chupa chups cotton candy cotton candy pudding soufflé
+                        jelly.
+                        Halvah liquorice liquorice toffee croissant cake chocolate bar chocolate bar. Cake apple pie
+                        pudding
+                        tiramisu biscuit tart bear claw. Bonbon sugar plum brownie sweet roll jelly danish pastry.
+                        Jelly-o
+                        cake
+                        cake liquorice carrot cake. Gingerbread muffin pie macaroon tootsie roll gummi bears chocolate
+                        bar
+                        carrot cake. Liquorice soufflé bear claw cookie. Gummi bears pastry dragée bear claw wafer
+                        toffee
+                        marshmallow caramels sweet. Danish jelly gummies biscuit caramels tart. Donut jelly liquorice
+                        chupa
+                        chups danish pudding dragée danish gingerbread. </br> Jelly carrot cake cotton candy brownie.
+                        Pie
+                        ice
+                        cream carrot cake dessert. Pudding pudding lollipop fruitcake. Gummies topping danish. Danish
+                        soufflé
+                        liquorice cake. Lollipop wafer jujubes toffee lollipop sugar plum wafer liquorice. Toffee
+                        liquorice
+                        jelly chocolate caramels jelly. Cotton candy dessert oat cake. Tart brownie topping brownie
+                        cheesecake
+                        cake. Cotton candy bonbon soufflé. Liquorice soufflé toffee marzipan chocolate cupcake sugar
+                        plum
+                        jujubes topping. Pastry danish ice cream lollipop lollipop. Sesame snaps topping dragée wafer
+                        toffee
+                        ice
+                        cream liquorice. Cheesecake cheesecake icing macaroon.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="skills">
+        <h2 class="h1 text-center">Compétences</h2>
+        <div id="SkillBox">
+            <p class="text-center">HTML</p>
+            <div class="SkillBar">
+                <div id="Skill-HTML">
+                    <span class="PercentText ">100%</span>
+                </div>
+            </div>
+            <p class="text-center">CSS</p>
+            <div class="SkillBar">
+                <div id="Skill-CSS">
+                    <span class="PercentText ">70%</span>
+                </div>
+            </div>
+            <p class="text-center">Bootstrap</p>
+            <div class="SkillBar">
+                <div id="Skill-bootstrap">
+                    <span class="PercentText ">40%</span>
+                </div>
+            </div>
+            <p class="text-center">Javascript</p>
+            <div class="SkillBar">
+                <div id="Skill-JS">
+                    <span class="PercentText ">65%</span>
+                </div>
+            </div>
+            <p class="text-center">PHP</p>
+            <div class="SkillBar">
+                <div id="Skill-php">
+                    <span class="PercentText ">40%</span>
+                </div>
+            </div>
+            <p class="text-center">MySQL</p>
+            <div class="SkillBar">
+                <div id="Skill-sql">
+                    <span class="PercentText ">30%</span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid" id="experiences">
+        <h2 class="h1 text-center">Expériences</h2>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Event 1</h3>
+                        <p>Event 1 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>January 2020</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Event 2</h3>
+                        <p>Event 2 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>July 2019</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Event 3</h3>
+                        <p>Event 3 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>March 2019</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
