@@ -1,3 +1,7 @@
+body {
+    background-color: #F3F8F2;
+}
+
 .img-header {
     height: 200px;
     width: 100%;
@@ -513,4 +517,26 @@
 
 .show {
     display: block;
+}
+
+#aboutme {
+    margin-top: 200px;
+}
+
+#skills {
+    margin-top: 300px;
+}
+
+#experiences {
+    margin-top: 300px;
+}
+
+#portfolio {
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+
+.btn-card {
+    background-color: #970cc1;
+    color: white;
 }
