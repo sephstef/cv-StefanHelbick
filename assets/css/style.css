@@ -1,6 +1,17 @@
 body {
     background-color: #F3F8F2;
 }
+footer {
+    background-color: #970CC1;
+    position: relative;
+}
+.circle {
+	position: absolute;
+    background-color: #970CC1;
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%; 
+}
 
 .img-header {
     height: 200px;
@@ -9,10 +20,6 @@ body {
 
 .navbar {
     background-color: #970CC1;
-}
-
-#moi {
-    height: 200px;
 }
 
 #centered {
@@ -146,337 +153,6 @@ body {
     }
 }
 
-#SkillBox {
-    font-size: 20px;
-    width: 95%;
-    height: auto;
-    margin: 40px auto;
-    background-color: #fff;
-    border: 1px solid #cdcdcd;
-    padding: 10px;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -moz-border-radius: 20px;
-}
-
-#SkillBox img {
-    width: 20%;
-    height: 10%;
-    margin: auto 35%;
-    padding: 10px;
-}
-
-.SkillBar {
-    width: 90%;
-    height: 50px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 20px auto;
-}
-
-#Skill-HTML {
-    width: 100%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
-    height: 50px;
-    position: absolute;
-    background-color: #E49EFA;
-}
-
-@keyframes Animate-HTML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 100%
-    }
-}
-
-@-webkit-keyframes Animate-HTML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 100%
-    }
-}
-
-@-moz-keyframes Animate-HTML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 100%
-    }
-}
-
-@-o-keyframes Animate-HTML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 100%
-    }
-}
-
-#Skill-CSS {
-    animation: Animate-CSS 4s;
-    -webkit-animation: Animate-CSS 4s;
-    -moz-animation: Animate-CSS 4s;
-    -o-animation: Animate-CSS 4s;
-    width: 70%;
-    height: 50px;
-    position: absolute;
-    background-color: #DF8CF8;
-}
-
-@keyframes Animate-CSS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 70%
-    }
-}
-
-@-webkit-keyframes Animate-CSS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 70%
-    }
-}
-
-@-moz-keyframes Animate-CSS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 70%
-    }
-}
-
-@-o-keyframes Animate-CSS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 70%
-    }
-}
-
-#Skill-bootstrap {
-    animation: Animate-jQuery 4s;
-    -webkit-animation: Animate-jQuery 4s;
-    -moz-animation: Animate-jQuery 4s;
-    -o-animation: Animate-jQuery 4s;
-    width: 40%;
-    height: 50px;
-    position: absolute;
-    background-color: #870BAD;
-}
-
-@keyframes Animate-jQuery {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-webkit-keyframes Animate-jQuery {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-moz-keyframes Animate-jQuery {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-o-keyframes Animate-jQuery {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-#Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 65%;
-    height: 50px;
-    position: absolute;
-    background-color: #3C054D;
-}
-
-@keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 65%
-    }
-}
-
-@-webkit-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 65%
-    }
-}
-
-@-moz-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 65%
-    }
-}
-
-@-o-keyframes Animate-JS {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 65%
-    }
-}
-
-#Skill-php {
-    animation: Animate-XML 4s;
-    -webkit-animation: Animate-XML 4s;
-    -moz-animation: Animate-XML 4s;
-    -o-animation: Animate-XML 4s;
-    width: 40%;
-    height: 50px;
-    position: absolute;
-    background-color: #CE52F4;
-}
-
-@keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-webkit-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-moz-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-@-o-keyframes Animate-XML {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%
-    }
-}
-
-#Skill-sql {
-    animation: Animate-C 4s;
-    -webkit-animation: Animate-C 4s;
-    -moz-animation: Animate-C 4s;
-    -o-animation: Animate-C 4s;
-    width: 30%;
-    height: 50px;
-    position: absolute;
-    background-color: #970cc1;
-}
-
-@keyframes Animate-C {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 30%
-    }
-}
-
-@-webkit-keyframes Animate-C {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 30%
-    }
-}
-
-@-moz-keyframes Animate-C {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 30%
-    }
-}
-
-@-o-keyframes Animate-C {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 30%
-    }
-}
-
-.Skill-Area {
-    z-index: 1;
-    float: left;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
-    text-shadow: none;
-    color: #fff;
-}
-
-.PercentText {
-    z-index: 3;
-    position: relative;
-    padding-right: 15px;
-    margin-top: 15px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-}
 
 .dropbtn {
     background-color: #970cc1;
@@ -519,24 +195,34 @@ body {
     display: block;
 }
 
-#aboutme {
-    margin-top: 200px;
+.title-color {
+    color: #970CC1;
+}
+.fa-check-circle {
+    color: #970CC1;
 }
 
-#skills {
-    margin-top: 300px;
-}
-
-#experiences {
-    margin-top: 300px;
-}
-
-#portfolio {
-    margin-top: 300px;
-    margin-bottom: 200px;
+.fa-circle {
+    color: #970CC1;
 }
 
 .btn-card {
     background-color: #970cc1;
     color: white;
+}
+
+#frontCard {
+    position: relative;
+}
+
+#backCard {
+    position: relative;
+}
+
+#logCard {
+    position: relative;
+}
+
+.font {
+    font-family: 'Permanent Marker', cursive;
 }
