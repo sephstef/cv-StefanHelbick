@@ -5,6 +5,10 @@ footer {
     background-color: #970CC1;
     position: relative;
 }
+
+p {
+    font-size: 1.3rem;
+}
 .circle {
 	position: absolute;
     background-color: #970CC1;
