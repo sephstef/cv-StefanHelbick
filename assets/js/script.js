@@ -1,89 +1,39 @@
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+(function () {
+  "use strict";
 
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
       }
     }
   }
-}
-jQuery(document).ready(function() {
 
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
-   
-  $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-  });
-    
-  setInterval(function(){
-    xp += ((mouseX - xp)/10);
-    yp += ((mouseY - yp)/10);
-    $("#circle").css({left: xp +'px', top: yp +'px'});
-  }, 20);
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
 
-});
 
-jQuery(document).ready(function() {
 
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
-   
-  $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-  });
-    
-  setInterval(function(){
-    xp += ((mouseX - xp)/20);
-    yp += ((mouseY - yp)/20);
-    $("#circle2").css({left: xp +'px', top: yp +'px'});
-  }, 20);
 
-});
 
-jQuery(document).ready(function() {
-
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
-   
-  $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-  });
-    
-  setInterval(function(){
-    xp += ((mouseX - xp)/30);
-    yp += ((mouseY - yp)/30);
-    $("#circle3").css({left: xp +'px', top: yp +'px'});
-  }, 20);
-
-});
-
-jQuery(document).ready(function() {
-
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
-   
-  $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-  });
-    
-  setInterval(function(){
-    xp += ((mouseX - xp)/40);
-    yp += ((mouseY - yp)/40);
-    $("#circle4").css({left: xp +'px', top: yp +'px'});
-  }, 20);
-
-});
 
 

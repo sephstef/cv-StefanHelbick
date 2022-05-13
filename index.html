@@ -20,14 +20,14 @@
             <h1 id="centered" class="text-white font">Stefan Helbick</h1>
         </div>
     </header>
-    <span id="circle" class="circle d-none d-md-block"></span>
-    <span id="circle2" class="circle d-none d-md-block"></span>
-    <span id="circle3" class="circle d-none d-md-block"></span>
-    <span id="circle4" class="circle d-none d-md-block"></span>
-    <nav class="navbar sticky-top navbar-expand-sm d-none d-sm-block navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="#aboutme">À Propos</a>
                     </li>
@@ -47,24 +47,15 @@
             </div>
         </div>
     </nav>
-    <div class="dropdown d-block d-sm-none">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#aboutme">À Propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#experiences">Expériences</a>
-            <a href="#portfolio">Portefolio</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
     <div id="aboutme"></div>
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="h1 text-center title-color m-5 font">À Propos</h2>
-                    <p>Je suis actuellement en formation à l'école des métiers du numérique La Manu. Cette formation me
-                        permettra d'obtenir le Titre Professionnel Développeur Web et Web Mobile (Bac+2) RNCP 31114.<br>
+                    <p>Je suis actuellement en formation Développeur Applications Mobiles à l'école des métiers du
+                        numérique La Manu. Cette formation est centrée sur l'utilisation du framework React-Native. Je
+                        suis titulaire du Titre Professionnel Développeur Web et Web Mobile (Bac+2) RNCP 31114.<br>
                         Je recherche une entreprise pour obtenir le Titre Professionnel Concepteur Développeur
                         d’Applications (Bac+3) RNCP 31678 dans le
                         cadre d’un contrat d’apprentissage.<br>
@@ -84,7 +75,7 @@
         <h2 class="h1 text-center m-5 title-color font">Compétences</h2>
 
         <div class="row">
-            <div class="card" id="frontCard" style="width: auto">
+            <div class="card col-12 col-md-6" id="frontCard">
                 <div class="card-body">
                     <h5 class="card-title text-center title-color">Front</h5>
                     <p class="card-text">
@@ -97,9 +88,6 @@
                         JAVASCRIPT <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
                             class="far fa-check-circle"></i><i class="far fa-circle"></i><i
                             class="far fa-circle"></i><br>
-                        Bootstrap <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
-                            class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
-                            class="far fa-circle"></i><br>
                         Wordpress <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
                             class="far fa-check-circle"></i><i class="far fa-circle"></i><i
                             class="far fa-circle"></i><br>
@@ -108,27 +96,55 @@
             </div>
         </div>
         <div class="row d-flex justify-content-end">
-            <div class="card" style="width: auto">
+            <div class="card col-12 col-md-6">
                 <div class="card-body">
                     <h5 class="card-title text-center title-color">Back</h5>
                     <p class="card-text">
                         PHP <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
-                            class="far fa-check-circle"></i><i class="far fa-circle"></i><i
+                            class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
                             class="far fa-circle"></i><br>
                         MySQL <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
                             class="far fa-check-circle"></i><i class="far fa-circle"></i><i
+                            class="far fa-circle"></i><br>
+                        C# <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-circle"></i><i class="far fa-circle"></i><i
                             class="far fa-circle"></i><br>
                     </p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="card" style="width: auto">
+            <div class="card col-12 col-md-6">
                 <div class="card-body">
                     <h5 class="card-title text-center title-color">Logiciels</h5>
                     <p class="card-text">
                         Adobe XD <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
                             class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><br>
+                            Visual Studio Code <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i class="far fa-circle"></i><br>
+                            Visual Studio <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-end">
+            <div class="card col-12 col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title text-center title-color">CMS et Frameworks</h5>
+                    <p class="card-text">
+                        Bootstrap <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-circle"></i><br>
+                        Wordpress <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-check-circle"></i><i class="far fa-circle"></i><i
+                            class="far fa-circle"></i><br>
+                        React-Native <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-check-circle"></i><i class="far fa-circle"></i><i
+                            class="far fa-circle"></i><br>
+                            Symfony <i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i
+                            class="far fa-circle"></i><i class="far fa-circle"></i><i
+                            class="far fa-circle"></i><br>
                     </p>
                 </div>
             </div>
@@ -137,52 +153,55 @@
     <div id="experiences"></div>
     <div class="container-fluid">
         <h2 class="h1 text-center m-5 title-color font">Expériences</h2>
-        <div class="timeline">
-            <ul>
-                <li>
-                    <div class="content">
-                        <h3>Formation</h3>
-                        <p>Formation à l'école des métiers du numérique La Manu pour le Titre Professionnel Développeur
-                            web et web mobile</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>fin Mars 2021 à Sept 2021</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Module de découverte</h3>
-                        <p>Participation à une session de découverte du métier de développeur au GRETA</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>Sept 2019 à Oct 2019</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>CDD à VNF</h3>
-                        <p>Vacataire à Voies Naviguables de France</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2013 à 2015</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="content">
-                        <h3>Bac Techno</h3>
-                        <p>Baccalauréat Technologique Sciences et Technologies de la Santé et Du Social</p>
-                    </div>
-                    <div class="point"></div>
-                    <div class="date">
-                        <h4>2012</h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
+
     </div>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                    <time>Mai 2022 à fin Juillet 2022</time>
+                    <h3>Formation</h3>
+                    <p>Formation POEC Développeur Applications Mobiles à l'école des métiers du numérique La Manu</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Octobre 2021 à fin Déc 2021</time>
+                    <h3>Formation</h3>
+                    <p>Formation MS Développement .NET à l'école des métiers du numérique La Manu</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Mars 2021 à Sept 2021</time>
+                    <h3>Formation</h3>
+                    <p>Formation à l'école des métiers du numérique La Manu pour le Titre Professionnel Développeur
+                        web et web mobile</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Sept 2019 à Oct 2019</time>
+                    <h3>Module de découverte</h3>
+                    <p>Participation à une session de découverte du métier de développeur au GRETA</p>
+                </div>
+            </li>      
+            <li>
+                <div>
+                    <time>2013 à 2015</time>
+                    <h3>CDD à VNF</h3>
+                    <p>Vacataire à Voies Naviguables de France</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>2012</time>
+                    <h3>Bac Techno</h3>
+                    <p>Baccalauréat Technologique Sciences et Technologies de la Santé et Du Social</p>
+                </div>
+            </li> 
+        </ul>
+    </section>
     <div id="portfolio"></div>
     <div class="container">
         <h2 class="h1 text-center m-5 title-color font">Portefolio</h2>
@@ -224,19 +243,20 @@
         </div>
     </div>
 
-    <footer class="text-white" id="contact">
-        <h2 class="text-center" id="contact font">Contact</h2>
+    <footer id="contact">
+        <h2 class="text-center font" id="contact">Contact</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-12">
+                <div class="col-sm-4 col-12">
                     <p><i class="fas fa-phone-square"></i> 0782565708</p>
                 </div>
-                <div class="col-sm-6 col-12">
+                <div class="col-sm-4 col-12">
                     <p><i class="fas fa-envelope-square"></i> helbickstefan@gmail.com</p>
                 </div>
-                <!-- <div class="col-sm-4 col-12">
-                    <p><i class="fab fa-linkedin"></i></p>
-                </div> -->
+                <div class="col-sm-4 col-12">
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/stefan-helbick-037324215">
+                            Voir le profil</a></p>
+                </div>
             </div>
         </div>
     </footer>
