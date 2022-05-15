@@ -34,6 +34,12 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.gif {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
 
 .title-color {
     color: #950d1b;
